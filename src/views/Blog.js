@@ -77,7 +77,7 @@ const Blog = () => {
               {moment(data.fields.creationDate).format('MMMM Do YYYY')}
             </p>
           </div>
-          <img src={data.fields.featuredImage} />
+          <img alt="Feature image" src={data.fields.featuredImage} />
         </SubHeroContainer>
       </HeroContainer>
       <BodyContainer

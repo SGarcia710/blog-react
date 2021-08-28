@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as _Link } from 'react-router-dom';
+import { Link as LinkComp } from 'react-router-dom';
 import styled from 'styled-components';
 import COLORS from '../commons/constants/colors';
 import SIZES from '../commons/constants/sizes';
@@ -51,10 +51,10 @@ const NavBar = () => {
   return (
     <Container className="w-full fixed top-0 left-0 z-10 flex justify-center">
       <SubContainer className={`${rowVertical} justify-between`}>
-        <_Link to="/" className={rowVertical}>
+        <LinkComp to="/" className={rowVertical}>
           <Logo className="mr-3" />
           <PageName className="text-white">Jupiter</PageName>
-        </_Link>
+        </LinkComp>
         <ul className={rowVertical}>
           <li>
             <Link to="/">Blog</Link>
