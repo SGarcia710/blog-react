@@ -26,14 +26,17 @@ const Footer = () => {
       </div>
       <div className="flex mt-6">
         <img
+          alt="Netlify"
           className={logoClasses}
           src="https://www.taniarascia.com/static/netlify-33bca343cbbd80d8da58eae4d7adc926.png"
         />
         <img
+          alt="React"
           className={logoClasses}
           src="https://cdn-images-1.medium.com/max/800/1*6kK9j74vyOmXYm1gN6ARhQ.png"
         />
         <img
+          alt="Tailwindcss"
           className={logoClasses}
           src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg"
         />
