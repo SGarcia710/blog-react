@@ -25,7 +25,7 @@ const PageName = styled.p`
   font-weight: 700;
 `;
 
-const Link = styled(_Link)`
+const Link = styled(LinkComp)`
   padding: 1rem 1.25rem;
   font-size: 1.2rem;
   background: ${COLORS.lightBackground};
