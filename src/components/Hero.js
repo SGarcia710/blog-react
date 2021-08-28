@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import COLORS from '../commons/constants/colors';
 import SIZES from '../commons/constants/sizes';
+import { FaGithub } from 'react-icons/fa';
 
 import Avatar from '../assets/images/avatar.jpg';
 
 const Container = styled.section`
   background-color: ${COLORS.lightBackground};
+  width: 100%;
 `;
 
 const SubContainer = styled.div`
@@ -28,11 +30,19 @@ const Description = styled.p`
 `;
 
 const GithubButton = styled.div`
+  color: white;
+  padding: 0.75rem 1rem;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+  }
   p {
     font-size: 1.2rem;
-    padding: 0.75rem 1rem;
     font-weight: 500;
     line-height: 1.3;
+    font-family: 'DM Mono';
   }
   border: 3px solid ${COLORS.borderColor};
   box-shadow: 5px 5px ${COLORS.borderColor};
@@ -57,7 +67,7 @@ const Image = styled.img`
 
 const Hero = () => {
   return (
-    <Container className="flex py-12 px-0 justify-center">
+    <Container className="flex py-12 px-0 justify-center mb-10">
       <SubContainer className="flex justify-between">
         <InfoContainer>
           <Hello className="mb-8 text-white">Im Jupiter.</Hello>
@@ -67,8 +77,9 @@ const Hero = () => {
             the years.
           </Description>
 
-          <GithubButton>
-            <p className="text-white">Follow me on Github</p>
+          <GithubButton className="flex items-center">
+            <FaGithub />
+            <p className="text-white">10,000 followers</p>
           </GithubButton>
         </InfoContainer>
         <Image src={Avatar} />

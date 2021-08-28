@@ -57,7 +57,7 @@ const NavBar = () => {
         </_Link>
         <ul className={rowVertical}>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/">Blog</Link>
           </li>
           <li>
             <Link to="/">Guias</Link>

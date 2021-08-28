@@ -1,6 +1,6 @@
 const COLORS = {
   fontColor: '#b3b9c5',
-  headingCOlor: '#ffd479',
+  headingColor: '#ffd479',
   darkFontColor: '#ced4da',
   background: '#1f2022',
   mediumFontColor: '#dee2e6',
